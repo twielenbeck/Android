@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app/src/main/java/tomw2/sgedu/site/eowsample" vcs="Git" />
     <mapping directory="E:\Spring18\Android\Android" vcs="Git" />
   </component>
