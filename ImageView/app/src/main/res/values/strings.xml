@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImageView</string>
+    <string name="title_activity_more_fun">MoreFun</string>
+    <string name="title_activity_test">test</string>
+</resources>

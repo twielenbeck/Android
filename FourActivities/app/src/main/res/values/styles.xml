@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="large" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="large.red">
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+    <style name="large.yellow">
+        <item name="android:textColor">#FFFF00</item>
+        <item name="android:typeface">serif</item>
+    </style>
+</resources>

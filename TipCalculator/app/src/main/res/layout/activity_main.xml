@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.tom.tipcalculator.MainActivity">
+
+    <EditText
+        android:id="@+id/in_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="460dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="Bill Amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/in_cardpay"
+        style="@android:style/Widget.CompoundButton.RadioButton"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="49dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:duplicateParentState="false"
+        android:text="Credit Card"
+        app:layout_constraintBottom_toTopOf="@+id/in_checkpayrouting"
+        app:layout_constraintEnd_toStartOf="@+id/in_checkpay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/in_price"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <RadioButton
+        android:id="@+id/in_checkpay"
+        android:layout_width="115dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="235dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="45dp"
+        android:text="Check"
+        app:layout_constraintBottom_toTopOf="@+id/in_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/in_cardpay"
+        app:layout_constraintTop_toBottomOf="@+id/in_price" />
+
+    <EditText
+        android:id="@+id/in_checkpayrouting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="510dp"
+        android:layout_marginEnd="383dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="178dp"
+        android:ems="10"
+        android:hint="Routing Number"
+        android:inputType="number"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <EditText
+        android:id="@+id/in_checkpayaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="278dp"
+        android:layout_marginEnd="383dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="511dp"
+        android:ems="10"
+        android:hint="Account Number"
+        android:inputType="number"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <EditText
+        android:id="@+id/in_cardpaycardnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="510dp"
+        android:layout_marginEnd="383dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="178dp"
+        android:ems="10"
+        android:hint="Credit Card Number"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/in_cardpaydate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="510dp"
+        android:layout_marginEnd="383dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="242dp"
+        android:ems="10"
+        android:hint="Payment Date"
+        android:inputType="date"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/in_submit"
+        android:layout_width="260dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="104dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="123dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/in_cardpaydate" />
+
+</android.support.constraint.ConstraintLayout>
